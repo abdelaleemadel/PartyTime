@@ -1,0 +1,108 @@
+:root {
+    --singer-n-bg-color: #E68285;
+    --singer-d-bg-color: #CCCCCC;
+    --singer-d-color: #90877D;
+    --icons-hover: #D62E33;
+}
+
+/* Navbar */
+
+
+
+ul {
+
+    list-style: none;
+    width: 250px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bi-x {
+    cursor: pointer;
+}
+
+/* Layout  */
+#home {
+    background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)) no-repeat center, url(../images/events-heavenly-header.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.heading {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+/* .layout * {
+    border: 1px white solid;
+} */
+
+h1 {
+    font-size: 3rem;
+}
+
+#toggle {
+    cursor: pointer;
+
+}
+
+/* ---------------------------------- */
+/*Singers */
+.singer-number {
+    cursor: pointer;
+    background-color: var(--singer-n-bg-color);
+}
+
+.singer-details {
+    background-color: var(--singer-d-bg-color);
+    color: var(--singer-d-color);
+    display: none;
+}
+
+/* End Singers  */
+
+
+/* Timer */
+#timer {
+    height: 250px;
+    background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)) no-repeat center, url(../images/invitation-2508607__340.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+.time-part {
+    height: 150px;
+}
+
+/* End time */
+
+/*Join   */
+small {
+    color: gray;
+}
+
+.social-icons i {
+    transition: all 800ms;
+}
+
+.social-icons i:hover {
+    color: white !important;
+    background-color: var(--icons-hover);
+}
+
+.enough {
+    display: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 590px) {
+    #toggle {
+        top: 70% !important
+    }
+}
