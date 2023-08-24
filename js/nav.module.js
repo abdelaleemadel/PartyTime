@@ -21,7 +21,7 @@ export default class Nav {
         navBar.css('width', '0');
         navBar.removeClass('d-none');
         navBar.animate({ width: 250 }, 1000);
-        layout.animate({ marginLeft: 240 }, 1000);
+        layout.animate({ marginLeft: Math.min(240, (($(window).width()) / 2) - 10) }, 1000);
         navBar.attr("data-toggle", "expanded");
         setTimeout(function () {
             open.html('close');
