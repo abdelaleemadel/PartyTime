@@ -103,6 +103,10 @@ small {
 /* MEDIA QUERY */
 @media screen and (max-width: 590px) {
     #toggle {
-        top: 70% !important
+        top: 70% !important;
+    }
+
+    nav {
+        max-width: 50%;
     }
 }
